@@ -24,17 +24,5 @@ int main()
     }
 
 
-
-
-
-    //STUFF
-    /*Multime Mx = M[1] + M[0];
-
-    cout << Mx;*/
-
-    if(M[2] == M[3])
-        cout<<"da";
-    else cout << "nu";
-
     return 0;
 }
