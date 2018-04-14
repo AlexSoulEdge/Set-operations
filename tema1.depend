@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1523726426 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\main.cpp
+	<iostream>
+	<fstream>
+	"Multime.h"
+
+1523726798 d:\alexandru\uni\proiecte\oop\tema1\tema1\multime.h
+	<iostream>
+
+1523727737 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\multime.cpp
+	<iostream>
+	"Multime.h"
+
+1523726372 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\overloading.cpp
+	<iostream>
+	"Multime.h"
+
