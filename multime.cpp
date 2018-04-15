@@ -66,13 +66,17 @@ Multime::~Multime()
 Multime::Multime(const Multime& other) : dimensiune(other.dimensiune)
 {
     //dimensiune = other.dimensiune;
-    v = new int[dimensiune];
-
-    for(int i = 0; i < dimensiune; i ++)
+    if(!dimensiune)
+        v = NULL;
+    else
     {
-        v[i] = other.v[i];
-    }
+        v = new int[dimensiune];
 
+        for(int i = 0; i < dimensiune; i ++)
+        {
+            v[i] = other.v[i];
+        }
+    }
     //cout << "Copy Constructor" << endl;
 }
 
@@ -80,12 +84,18 @@ Multime& Multime::operator=(const Multime& other)
 {
     if (this == &other) return *this; // handle self assignment
 
+    delete[] v;
     dimensiune = other.dimensiune;
-    v = new int[dimensiune];
-
-    for(int i = 0; i < dimensiune; i ++)
+    if(!dimensiune)
+        v = NULL;
+    else
     {
-        v[i] = other.v[i];
+        v = new int[dimensiune];
+
+        for(int i = 0; i < dimensiune; i ++)
+        {
+            v[i] = other.v[i];
+        }
     }
 
     //cout << "Assignment operator" << endl;
@@ -152,13 +162,19 @@ istream& operator>>(istream &in, Multime &multime)
     //cout << "Dimensiune:";
     in >> multime.dimensiune;
 
-    delete[] multime.v;
-    multime.v = new int[multime.dimensiune];
+    if(!multime.dimensiune)
+        multime.v = NULL;
 
-    for(int i = 0; i < multime.dimensiune; i ++)
+    else
     {
-        //cout << "Elementul nr." << i + 1 << " : ";
-        in >> multime.v[i];
+        delete[] multime.v;
+        multime.v = new int[multime.dimensiune];
+
+        for(int i = 0; i < multime.dimensiune; i ++)
+        {
+            //cout << "Elementul nr." << i + 1 << " : ";
+            in >> multime.v[i];
+        }
     }
 
     //multime.fix_vector(); //- nu stiu daca sa o apelez de fiecare data cand citesc sau sa o pun in interiorul supraincarcarii operatorului >>

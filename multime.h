@@ -1,6 +1,7 @@
 #ifndef MULTIME_H
 #define MULTIME_H
 #include <iostream>
+#include "Multime_Perechi.h"
 
 using namespace std;
 
@@ -27,6 +28,7 @@ class Multime
 
         //functions
         void fix_vector();
+        friend Multime_Perechi produs_cartezian(const Multime &M1, const Multime &M2);
 
         //overloading
         friend ostream& operator<< (ostream &out, const Multime &multime);

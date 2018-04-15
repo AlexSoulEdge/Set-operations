@@ -34,10 +34,16 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="Multime_Perechi.cpp" />
+		<Unit filename="Multime_Perechi.h" />
+		<Unit filename="Pereche.cpp" />
+		<Unit filename="Pereche.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="multime.cpp" />
 		<Unit filename="multime.h" />
 		<Unit filename="text.txt" />
+		<Unit filename="text2.txt" />
+		<Unit filename="text3.txt" />
 		<Extensions>
 			<code_completion />
 			<envvars />
