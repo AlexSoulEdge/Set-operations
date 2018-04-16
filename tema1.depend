@@ -15,15 +15,15 @@
 	<iostream>
 	"Multime.h"
 
-1523794481 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime.cpp
+1523886418 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime.cpp
 	<iostream>
 	"Multime.h"
 
-1523797656 d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime.h
+1523882875 d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime.h
 	<iostream>
 	"Multime_Perechi.h"
 
-1523798568 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\main.cpp
+1523883512 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\main.cpp
 	<iostream>
 	<fstream>
 	"Multime.h"
@@ -37,12 +37,12 @@
 	"Pereche.h"
 	<iostream>
 
-1523796109 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime_perechi.cpp
+1523882831 source:d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime_perechi.cpp
 	"Multime_Perechi.h"
 	"Pereche.h"
 	<iostream>
 
-1523795952 d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime_perechi.h
+1523882683 d:\alexandru\uni\proiecte\oop\tema1\tema1\set-operations\multime_perechi.h
 	<iostream>
 	"Pereche.h"
 

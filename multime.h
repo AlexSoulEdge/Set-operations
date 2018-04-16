@@ -38,6 +38,7 @@ class Multime
         friend Multime operator- (const Multime &M1, const Multime &M2);
         friend bool operator== (const Multime &M1, const Multime &M2);
         friend bool operator!= (const Multime &M1, const Multime &M2);
+        friend bool operator< (const Multime &M1, const Multime &M2);
 
 
 };

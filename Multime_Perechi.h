@@ -22,6 +22,7 @@ class Multime_Perechi
         //overloading
         friend ostream& operator<< (ostream &out, const Multime_Perechi &multime_perechi);
         friend istream& operator>> (istream &in, Multime_Perechi &multime_perechi);
+        friend bool operator< (const Multime_Perechi &M1, const Multime_Perechi &M2);
 
         //functions
         void fix_vector();

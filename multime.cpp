@@ -58,7 +58,8 @@ Multime::Multime(int n, char* Array) : dimensiune(n)
 
 Multime::~Multime()
 {
-    delete[] v;
+    if(v != NULL)
+        delete[] v;
 
     //cout << "Destructor" << endl;
 }
@@ -313,4 +314,12 @@ bool operator== (const Multime &M1, const Multime &M2)
 bool operator!= (const Multime &M1, const Multime &M2)
 {
     return !(M1 == M2);
+}
+
+bool operator< (const Multime &M1, const Multime &M2)
+{
+    if(M1.dimensiune < M2.dimensiune)
+        return true;
+
+    return false;
 }

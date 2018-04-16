@@ -27,7 +27,8 @@ Multime_Perechi::Multime_Perechi(int n, Pereche Array[]) : dimensiune(n)
 
 Multime_Perechi::~Multime_Perechi()
 {
-    delete[] v;
+    if(v != NULL)
+        delete[] v;
 }
 
 Multime_Perechi::Multime_Perechi(const Multime_Perechi& other) : dimensiune(other.dimensiune)
@@ -118,6 +119,13 @@ void Multime_Perechi::fix_vector()
             dimensiune--;
         }
     }
+}
+
+bool operator< (const Multime_Perechi &M1, const Multime_Perechi &M2)
+{
+    if(M1.dimensiune < M2.dimensiune)
+        return true;
+    return false;
 }
 
 
